@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+    <link rel="stylesheet" type="text/css" href="cs/style.css">
+</head>
+<body onload="showName()">
+    <div class="container"> 
+        
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">TWITTER</a>
+            </div>
+            <div class="menu">
+                <a href="user.html" id = "logid" class="userY"></a>   
+                <a href="login.html" onclick="logOut()" id = "logoutID">Logout</a>
+                <a href="login.html" id="loginID">Login</a>   
+                <a href="registration.html" id="registerID">Register</a>    
+            </div>
+        </div>
+
+        <div class="form">
+            <div>
+                <span>EMAIL:</span><br>
+                <input type="text" class="inp" id = "email1"><br>
+            </div>
+
+            <div class="divps">
+                <span>PASSWORD:</span><br>
+                <input type="password" class="inp" id = "pass"><br>
+            </div>
+
+            <div class="divps">
+                <span>FULL NAME:</span><br>
+                <input type="text" class="inp" id = "fullName">
+            </div>
+           
+                <div class="divps">
+                    <span>COUNTRY:</span><br>
+                    <select class = "country" id = "countryName">
+                        <option disabled selected value="not_selected"></option>
+                        <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+                        <option value="USA">USA</option>
+                        <option value="ITALY">ITALY</option>>
+                        <option value="GERMANY">GERMANY</option>
+                        <option value="SPAIN">SPAIN</option>
+                      </select>
+                </div>
+                
+            <div class="divps">
+                <span>BIRTHDAY:</span><br>
+                <input type="date" class="dateI" id = "birthDay">
+            </div>
+            <div class="divps">
+                <button class="btn" onclick="registration()">REGISTER</button>
+            </div>
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="js/scriptRegistration.js"></script>
+</body>
+</html>

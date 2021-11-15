@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKET PAGE</title>
+    <link rel="stylesheet" type="text/css" href="cs/style.css">
+</head>
+<body onload="showGoods(); showName();">
+    <div class="container" id = "cont"> 
+        
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">TWITTER</a>
+            </div>
+            <div class="menu">
+                <a href="user.html" id = "logid" class="userY"></a>   
+                <a href="login.html" onclick="logOut()" id = "logoutID">Logout</a>
+                <a href="login.html" id ="loginID">Login</a>   
+                <a href="registration.html" id ="registerID">Register</a>   
+            </div>
+        </div>
+
+        <div class="main"> 
+            
+            <div class="divka">
+                <div class="dSpan"><span>NAME</span></div>
+            </div>
+            
+            <div class="divka">
+                <div class="dSpan"><span>PRICE</span></div>
+            </div>
+            
+            <div class="divka">
+                <div class="dSpan"><span>REMOVE</span></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="goToGoods">
+        <button class="bBusket" onclick="goToGoods()">GOODS</button>
+    </div>
+
+    <script type="text/javascript" src="js/scriptBasket.js"></script>
+</body>
+</html>

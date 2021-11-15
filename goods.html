@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOODS PAGE</title>
+    <link rel="stylesheet" type="text/css" href="cs/style.css">
+</head>
+<body onload="showName()">
+    <div class="container"> 
+        
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">TWITTER</a>
+            </div>
+            <div class="menu">
+                <a href="user.html" id = "logid"></a>   
+                <a href="login.html" id="logoudID" onclick="logOut()">Logout</a>
+                <a href="login.html" id = "loginID">Login</a>   
+                <a href="registration.html" id="registerID">Register</a>    
+            </div>
+        </div>
+
+        <div class="goods">
+            <span class="goodsSt" id = "goodsName">IPhone 12 Pro</span> 
+            <span class = "goodsSt">-</span> 
+            <span class = "goodsSt" id = "goodsPrice">1200 USD</span><br>
+            <span>6 GB RAM, Memory 128 GB, double front back camera</span>
+            <button class = "addButton" onclick="addGoods(this)">+ ADD TO BASKET</button>
+        </div>
+
+        <div class="goods">
+            <span class="goodsSt" id = "goodsName">XIAOMI REDMI NOTE 8</span> 
+            <span class = "goodsSt">-</span> 
+            <span class = "goodsSt" id = "goodsPrice">250 USD</span><br>
+            <span>6 GB RAM, Memory 64 GB, 3 camera in back</span>
+            <button class = "addButton" onclick="addGoods(this)">+ ADD TO BASKET</button>
+        </div>
+
+        <div class="goods">
+            <span class="goodsSt" id = "goodsName">ASUS Tuf Gaming PRO</span>
+            <span class="goodsSt">-</span>     
+            <span class = "goodsSt" id = "goodsPrice">1500 USD</span><br>
+            <span>24 GB RAM, SSD 1 TB, RX Radeon</span><br>
+            <button class = "addButton" onclick="addGoods(this)">+ ADD TO BASKET</button>
+        </div>
+
+        <div class="goods">
+            <span class="goodsSt" id = "goodsName">Samsung Galaxy Note 13</span> 
+            <span class="goodsSt">-</span> 
+            <span class = "goodsSt" id = "goodsPrice">999 USD</span><br>
+            <span>4 GB RAM, Memory 256 GB, front-back cameras</span>
+            <button class = "addButton" onclick="addGoods(this)">+ ADD TO BASKET</button>    
+        </div>
+
+    <div class="dBasket">
+        <button class="bBusket" onclick="goToBasket()">BASKET</button>
+        </div>   
+
+    <script type="text/javascript" src="js/scriptGoods.js"></script>
+</body>
+</html>

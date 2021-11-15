@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PAGE</title>
+    <link rel="stylesheet" type="text/css" href="cs/style.css">
+</head>
+<body onload="showPerson()">
+    <div class="container"> 
+        
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">TWITTER</a>
+            </div>
+            <div class="menu">
+                <a href="user.html" id = "logid"></a>   
+                <a href="login.html" id = "logoutID" onclick="logOut()">Logout</a>
+                <a href="login.html" id = "loginID">Login</a>   
+                <a href="registration.html" id = "registerID">Register</a>   
+            </div>
+        </div>
+
+        <div class="form">
+            
+            <div class="divOne">
+                <h3>Wellcome&nbsp</h3>
+                <h3 id = "name1"></h3>
+            </div>
+            
+            <div>
+                <span>EMAIL:</span><br>
+                <span class = "sbold" id = "email1"></span>
+            </div>
+
+            <div class="divps">
+                <span>FULL NAME:</span><br>
+                <span class = "sbold" id = "fullName1"></span>
+            </div>
+
+            <div class="divps">
+                <span>COUNTRY:</span><br>
+                <span class = "sbold" id = "countryName1"></span>
+            </div>
+
+            <div class="divps">
+                <span>BIRTHDAY:</span><br>
+                <span class = "sbold" id = "birthDay1"></span>
+            </div>
+
+            <div class="byGoods">
+                <button class="buyButton" onclick="funcByGoods()">BUY GOODS</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="js/scriptUser.js"></script>
+</body>
+</html>
